@@ -82,12 +82,18 @@ public class Valiable {
 		System.out.println("소크라테스가 말했다.\"고로 나는 존재한다.\"");
 		System.out.println("\\");
 		
-		System.out.println("asdfgas");
-		System.out.println("asdfgas");
-		System.out.println("\nasdfgas");
-		System.out.println("\\dadads");
-		System.out.println("\rasdfgas");
-		System.out.println("\nasdfgas");
+//		변수의 범위
+//		변수는 선언된 블럭 내에서만 사용 가능하다.
+		
+		if(a ==1) {
+			int aaa = 10;
+			int bbb = aaa + a;
+			System.out.println("bbb: " +bbb);
+		} else {
+			
+		}
+		
+		
 		
 	}
 
