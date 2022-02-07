@@ -9,7 +9,9 @@ public class Valiable {
 //		모든 변수명은 붙여서 사용
 
 		
-		String fullName = "yina Yun";
+		String fullName = "yina Yun"; // 카멜표기법 //변수,함수
+		String full_name = "yina Yun"; // 스네이크법
+		String FullName = "yina Yun"; // 파스칼 //클래스,상수
 		String name = "Yina";
 		
 //		대소문자 구분함		
@@ -43,7 +45,9 @@ public class Valiable {
 //		실수형은 0.0
 //		문자형은 '' 또는 ""
 		
-		boolean defaultNy = false;
+		boolean defaultNy = true;	//true
+		boolean delNy = false;	//false
+		
 		
 		byte aa = 0;
 		short bb = 0;
