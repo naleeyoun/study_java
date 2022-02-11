@@ -17,45 +17,103 @@ public class ifNestedExample {
 //		System.out.println("학점은: " +grade);
 		
 //		
-		double score = 2.3;
-		String grade = "";
+//		int score = 76;
+//		String grade = "";
+//		
+//		if(score >= 95) {
+//			grade = "A+"; 
+//		} else {
+//			if(score >= 90) {
+//				grade = "A";
+//			} else {
+//				if(score >= 85) {
+//					grade = "B+";
+//				} else {
+//					if(score >= 80) {
+//						grade = "B";
+//					} else {
+//						if(score >= 75) {
+//							grade = "C+";
+//						} else {
+//							if(score >= 70) {
+//								grade = "C";
+//							} else {
+//								if(score >= 65) {
+//									grade = "D+";
+//								} else {
+//									if(score >= 60) {
+//										grade = "D";
+//									} else {
+//										grade = "F";
+//									}
+//								}	
+//							}
+//						}
+//					}
+//				}
+//			}
+//		}
+//		System.out.println("학점은: " +grade);
+//		
+//		int score = 76;
+//		String grade = "";
+//
+//		if (score >= 90) {
+//		   if (score >= 95) {
+//		      grade = "A+";
+//		   } else {
+//		      grade = "A";
+//		   }
+//		}
+//		else if  (score >= 80) {
+//			if (score >= 85) {
+//		         grade = "B+";
+//		    } else {
+//		         grade = "B";
+//		    }
+//		}
+//		else if (score >= 70) {
+//			if (score >= 75) {
+//	            grade = "C+";
+//	         } else {
+//	            grade = "C";
+//	         }
+//		}
+//		else if (score >= 60) {
+//			if (score >= 65) {
+//		        grade = "D+";
+//		      } else {
+//		        grade = "D";
+//		      }
+//		} else {
+//				grade = "F";
+//			  }
+//	
+//		System.out.println("학점은:" + grade);
 
 		
-		if(score >= 0) {
-			  if (score >= 2.0) {
-				grade="D";
-			  } else {
-				grade="F";
-			  }  
-		}			
+		int a = 2;
+		int b = -2;
+		String quadrant = "";
 		
-		if(score >= 2.5) {
-			  if (score >= 3.0) {
-				grade="B";
-			  } else {
-				grade="C";
-			  }  
-		}	
-		
-		
-		if(score >= 3.5) {
-			if (score >= 4.0) {
-			 grade="A+";
-		    } else {
-			grade="A";
-		    }  
+		if ( a > 0 ) {
+			if (b > 0) {
+				quadrant = "제1사분면";
+			} else {
+				quadrant = "제4사분면";
+			}
 		}
-			
-		System.out.println("학점은: " +grade);
-
+		else if (a < 0) {
+			if (b > 0) {
+				quadrant = "제2사분면";
+			} else {
+				quadrant = "제3사분면";
+			}
+		} else {
+				quadrant = "x축, y축, 영점";
+		}
 		
-
-	          
-
-
-		
-		
-	
+		System.out.println("(a,b)는: " + quadrant + "에 있습니다." );
 	}
 }
 
