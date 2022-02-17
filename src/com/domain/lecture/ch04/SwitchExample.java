@@ -1,5 +1,7 @@
 package com.domain.lecture.ch04;
 
+import java.util.Scanner;
+
 public class SwitchExample {
 
 	public static void main(String[] args) {
@@ -40,6 +42,9 @@ public class SwitchExample {
 //		}
 		
 
+		
+		
+		
 		int num1 = (int)(Math.random() * (6-1 +1) + 1);
 
 		switch (num1) {
