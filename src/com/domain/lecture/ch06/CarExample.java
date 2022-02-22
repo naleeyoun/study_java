@@ -4,7 +4,11 @@ public class CarExample {
 
 	public static void main(String[] args) {
 
-		Car car = new Car();
+		Car car = new Car();	// car() 생성자 = 함수이다, new : 연산자
+		
+		Student student = new Student();
+		
+		System.out.println("student.no: " + student.no);
 		
 		
 //		객체접근연산자 (car.company)를 사용하여 
