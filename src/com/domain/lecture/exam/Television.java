@@ -1,9 +1,9 @@
-package com.domain.lecture.ch08;
+package com.domain.lecture.exam;
 
-public class Television implements RemoteControl{
+public class Television implements RemoteControl {
 
 	//필드
-	private int volume;	
+	private int volume;
 	
 	@Override
 	public void turnOn() {
@@ -13,7 +13,6 @@ public class Television implements RemoteControl{
 	@Override
 	public void turnOff() {
 		System.out.println("TV를 끕니다.");
-		
 	}
 
 	@Override
@@ -25,9 +24,6 @@ public class Television implements RemoteControl{
 		} else {
 			this.volume = volume;
 		}
-		System.out.println("현재 TV 볼륨: " + volume);
-		
+		System.out.println("현재 TV 볼륨: " + this.volume);
 	}
-	
-
 }
