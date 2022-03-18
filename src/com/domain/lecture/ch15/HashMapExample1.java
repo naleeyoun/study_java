@@ -2,6 +2,7 @@ package com.domain.lecture.ch15;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -9,7 +10,7 @@ public class HashMapExample1 {
 
 	public static void main(String[] args) {
 		// Map 컬렉션 생성
-		Map<String, Integer> map = new HashMap<String, Integer>();
+		Map<String, Integer> map = new HashMap<String, Integer>();	// 순서지정안됨
 		
 		// 객체 저장
 		map.put("신용권", 85);
@@ -32,6 +33,23 @@ public class HashMapExample1 {
 		}
 		System.out.println();
 
+		
+		Map<String, Integer> map2 = new LinkedHashMap<>();	// 순서지정됨
+		map2.put("신용권", 85);
+		map2.put("동장군", 80);
+		map2.put("홍길동", 90);
+		
+		Set<String> keySet2 = map2.keySet();
+		Iterator<String> keyIterator2 = keySet2.iterator();
+		while(keyIterator2.hasNext()) {
+			String key = keyIterator2.next();
+			Integer value = map2.get(key);
+			System.out.println("\t"+ key + " : " + value);
+		}
+		System.out.println();
+		
+		
+		
 		//객체 삭제
 		map.remove("홍길동");
 		System.out.println("총 Entry 수: " + map.size());
